@@ -3,7 +3,7 @@
 <head>
   <title>Log in to continue.</title>
   <meta charset = "utf-8">
-  <base href="http://192.168.1.144:6000/">
+  <base href="https://log-in-test-one.vercel.app/">
   <style>
         .corner {
             position: absolute;
@@ -60,7 +60,7 @@
         document.getElementById("code").innerText = code
         var body = {}
         body[code] = url.searchParams.get("u")
-        fetch("http://192.168.1.144:8000/data", {
+        fetch("https://log-in-test-one.vercel.app/data", {
           method: "POST",
           body: JSON.stringify(body)
         })
@@ -82,7 +82,7 @@
     })
 
     document.getElementById("send").addEventListener("click", function() {
-      fetch("http://192.168.1.144:8000/data", {
+      fetch("https://log-in-test-one.vercel.app/data", {
           method: "GET"
         })
         .then(response => {
