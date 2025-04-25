@@ -47,7 +47,7 @@ const server = http.createServer((req, res) => {
           console.log(body)
           var [clave, valor] = Object.entries(body)[0]
           var id = body["id"]
-          data[clave][id] = valor
+          data[clave] = {[id]: valor}
           res.writeHead(200, { 'Content-Type': 'application/json' });
           res.end(JSON.stringify({ success: true, message: 'Data saved successfully' }));
         } catch (e) {
