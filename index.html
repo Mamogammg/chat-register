@@ -65,7 +65,7 @@
         var body = {}
         body[code] = url.searchParams.get("u")
         body["id"] = id
-        fetch("https://log-in-test-one.vercel.app/data", {
+        fetch("https://chat-register.vercel.app/data", {
           method: "POST",
           body: JSON.stringify(body)
         })
@@ -87,7 +87,7 @@
     })
 
     document.getElementById("send").addEventListener("click", function() {
-      fetch("https://log-in-test-one.vercel.app/data", {
+      fetch("https://chat-register.vercel.app/data", {
           method: "GET"
         })
         .then(response => {
