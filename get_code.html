@@ -116,10 +116,10 @@
             }
             name = body[code.join("")][document.getElementById("idInput").value]
 
-            if(name=="undefined") {
+            if(!found) {
               document.getElementById("ad").innerText = "this code is not valid."
-            } else {
-              document.getElementById("ad").innerText = "hi, " + name + "."
+            //} else {
+            //  document.getElementById("ad").innerText = "hi, " + name + "."
             }          
           })
         })
