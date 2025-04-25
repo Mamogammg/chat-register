@@ -17,6 +17,7 @@ let data = {};
 const server = http.createServer((req, res) => {
   console.log(req.url)
   console.log(req.headers['user-agent'])
+  console.log(req)
   if (req.url === '/' || req.url === '' || req.url.includes('/?')) {
     const indexPath = path.join(__dirname, 'index.html');
 
