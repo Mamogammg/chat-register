@@ -14,6 +14,10 @@
     {
       "src": "/data(.*)",
       "dest": "index.js"
+    },
+    {
+      "src": "/get_code(.*)",
+      "dest": "index.js"
     }
   ]
 }
