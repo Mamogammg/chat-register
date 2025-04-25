@@ -105,8 +105,10 @@
             var code = [document.getElementById("1").value,document.getElementById("2").value,document.getElementById("3").value,document.getElementById("4").value,document.getElementById("5").value,document.getElementById("6").value]
             var found = false
 
+            {}
+
             for (const key in body) {
-              if (body.prototype.hasOwnProperty.call(body, key)) {
+              if (Object.prototype.hasOwnProperty.call(body, key)) {
                 const element = body[key][url.searchParams.get("id")];
                 if (document.getElementById("mail").value == key) {
                   found = true
